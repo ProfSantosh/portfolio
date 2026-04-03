@@ -61,7 +61,7 @@ body {
   color: var(--color-text);
   background: var(--color-bg);
   position: relative;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 /* Animated Background with Grid */
@@ -291,6 +291,33 @@ main {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* ============================================
+   STICKY SECTION HEADERS (all.md)
+   ============================================ */
+
+.sticky-section-h2 {
+  position: sticky;
+  top: var(--nav-height, 64px);
+  z-index: 100;
+  background: rgba(10, 10, 18, 0.95);
+  border-bottom: 1px solid var(--color-border);
+  padding: 0.75rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.sticky-section-h2 h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.section-sentinel {
+  height: 0;
+  visibility: hidden;
 }
 
 /* ============================================

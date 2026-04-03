@@ -77,7 +77,9 @@ The full URL will also be shown in:
 - **Solution:** Check `requirements.txt` is valid and dependencies are available
 
 **Problem:** CV extraction fails
-- **Solution:** Ensure `_source/cv.md` exists and is readable
+- **Solution:** Ensure `_source/html/CV.html` exists and is a valid HTML file
+- **Solution:** Ensure `scripts/base_cv.json` is valid JSON
+- **Solution:** Run `python scripts/extract_cv.py` locally and check console output
 
 **Problem:** Jekyll build fails
 - **Solution:** Run `bundle exec jekyll build` locally to identify issues
@@ -128,5 +130,6 @@ For issues:
 - [ ] Site accessible at https://profsantosh.github.io/santosh
 - [ ] All pages load correctly (Home, About, Experience, etc.)
 - [ ] Social links work correctly
-- [ ] CV data displays properly
+- [ ] CV source files present (`_source/html/CV.html` and `scripts/base_cv.json`)
+- [ ] CV data displays properly (`_data/cv.json` generated correctly)
 - [ ] Mobile responsive design works
